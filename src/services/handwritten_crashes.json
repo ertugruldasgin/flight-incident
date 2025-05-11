@@ -1,0 +1,61 @@
+{
+  "period": "2000s",
+  "year": "2001",
+  "title": "September 11 Attacks",
+  "date": "2001-09-11",
+  "aircraftType": "Boeing 767-223ER, Boeing 767-222, Boeing 757-223, Boeing 757-222",
+  "operator": "American Airlines, United Airlines",
+  "occupants": "265 (all on board across 4 flights)",
+  "passengers": "227 (including 19 hijackers)",
+  "crew": "33",
+  "fatalities": "2977 (including all occupants and victims on the ground)",
+  "injuries": "6,000–25,000+",
+  "survivors": "0 (no survivors from any of the hijacked flights)",
+  "summary": "On September 11, 2001, Al-Qaeda operatives orchestrated a coordinated terrorist attack against the United States by hijacking four commercial airplanes. Two planes crashed into the Twin Towers of the World Trade Center in New York City, one struck the Pentagon in Arlington, Virginia, and the fourth crashed into a field in Pennsylvania after passengers attempted to overcome the hijackers. The attacks resulted in nearly 3,000 deaths and profoundly reshaped global security policies and international relations.",
+  "site": "New York City, Arlington (Virginia), Shanksville (Pennsylvania), United States",
+  "coordinates": "40.7128°N 74.0060°W (New York City), 38.8700°N 77.0550°W (Pentagon), 40.0300°N 78.9000°W (Shanksville)",
+  "details": {
+    "aircraft": [
+      "The attacks involved four Boeing aircraft models: two Boeing 767s and two Boeing 757s. American Airlines Flight 11 and United Airlines Flight 175 were Boeing 767s departing from Boston Logan International Airport. American Airlines Flight 77 and United Airlines Flight 93 were Boeing 757s departing from Washington Dulles Airport and Newark International Airport, respectively.",
+      "The planes were selected because of their large fuel capacities for long-distance flights, which created massive explosions and structural damage upon impact.",
+      "The hijackers received flight training in the United States, allowing them to control the aircraft after overpowering the pilots and crew with small knives and box cutters."
+    ],
+    "incident": [
+      "At approximately 8:46 AM, American Airlines Flight 11 crashed into the North Tower of the World Trade Center. United Airlines Flight 175 followed at 9:03 AM, striking the South Tower.",
+      "Shortly after, at 9:37 AM, American Airlines Flight 77 crashed into the western side of the Pentagon.",
+      "United Airlines Flight 93, delayed on the runway, was hijacked but never reached its intended target due to a passenger revolt; it crashed into a field near Shanksville, Pennsylvania at 10:03 AM.",
+      "The attacks led to the collapse of the Twin Towers and extensive destruction in Lower Manhattan. The Pentagon suffered severe damage, and thousands of lives were lost or permanently affected."
+    ],
+    "investigation": [
+      "The FBI immediately launched Operation PENTTBOM, the largest criminal investigation in U.S. history.",
+      "Evidence quickly pointed to Al-Qaeda as the responsible organization. In 2002, the 9/11 Commission was formed to provide a thorough account of the events and circumstances leading to the attacks.",
+      "The Commission's final report, released in 2004, revealed significant failures in intelligence gathering, communication between agencies, and aviation security.",
+      "The investigation led to major reforms, including the establishment of the Department of Homeland Security and the reorganization of U.S. intelligence services."
+    ],
+    "cause": [
+      "The motivations behind the attacks were rooted in Al-Qaeda's opposition to American foreign policy, particularly the U.S. military presence in Saudi Arabia, support for Israel, and intervention in Middle Eastern affairs.",
+      "Osama bin Laden had previously issued fatwas in 1996 and 1998, declaring jihad against the United States.",
+      "Operationally, the success of the attacks was facilitated by gaps in airport security, poor interagency intelligence sharing, and a general underestimation of the threat posed by non-state terrorist actors."
+    ],
+    "timeline": [
+      "7:59 AM: American Airlines Flight 11 departs from Boston Logan Airport.",
+      "8:14 AM: United Airlines Flight 175 departs from Boston Logan Airport.",
+      "8:20 AM: American Airlines Flight 77 departs from Washington Dulles Airport.",
+      "8:42 AM: United Airlines Flight 93 departs from Newark Airport.",
+      "8:46 AM: Flight 11 crashes into the North Tower of the World Trade Center.",
+      "9:03 AM: Flight 175 crashes into the South Tower of the World Trade Center.",
+      "9:37 AM: Flight 77 crashes into the Pentagon.",
+      "9:59 AM: The South Tower collapses.",
+      "10:03 AM: Flight 93 crashes into a field near Shanksville, Pennsylvania.",
+      "10:28 AM: The North Tower collapses.",
+      "5:20 PM: World Trade Center 7 collapses due to fire-induced structural failure."
+    ],
+    "casualties": [
+      "The attacks resulted in the deaths of 2,977 victims, excluding the 19 hijackers.",
+      "Among the deceased were 246 passengers and crew aboard the four flights, 2,606 people in and around the World Trade Center, and 125 individuals at the Pentagon.",
+      "The fatalities included 343 firefighters and 72 law enforcement officers.",
+      "Additionally, more than 6,000 individuals were injured.",
+      "Thousands more, especially first responders and residents of Lower Manhattan, later suffered from chronic illnesses such as respiratory problems and cancer due to prolonged exposure to the toxic debris cloud produced by the collapse of the towers."
+    ]
+  }
+}
