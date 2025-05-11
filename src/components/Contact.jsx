@@ -4,7 +4,7 @@ import { IoIosMail } from "react-icons/io";
 const Contact = () => {
   return (
     <div className="flex flex-row">
-      <div className="z-20 flex flex-col gap-4 items-center px-4 text-neutral-900 dark:text-white xl:max-w-[70%] mx-auto transition-colors duration-300">
+      <div className="z-20 flex flex-col gap-4 items-center px-4 text-neutral-900 dark:text-white xl:w-[70%] mx-auto transition-colors duration-300">
         <div className="p-4 bg-white/70 dark:bg-neutral-900/70 border border-neutral-200 dark:border-neutral-800 rounded-2xl shadow-lg opacity-70 w-full transition-colors duration-300">
           <div className="bg-neutral-300/50 dark:bg-neutral-600/50 border-0 rounded-lg p-4 h-full w-full shadow-md flex flex-col transition-colors duration-300">
             <p className="text-xl sm:text-2xl md:text-3xl xl:text-4xl capitalize font-semibold text-neutral-900 dark:text-white pb-4 transition-colors duration-300">
