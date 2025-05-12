@@ -34,7 +34,10 @@ const About = () => {
               <span className="font-semibold">
                 Computer Engineering Freshman
               </span>{" "}
-              and an <span className="font-semibold">Aircraft Maintenance</span>
+              and an{" "}
+              <span className="font-semibold">
+                Aircraft Maintenance Technician
+              </span>
               , combining technical curiosity with a shared interest in aviation
               safety and history.
             </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const Layout = ({ children }) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
 
       <Navbar />
       <div>{children}</div>
+      <Analytics />
     </div>
   );
 };
