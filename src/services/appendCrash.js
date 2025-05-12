@@ -6,10 +6,14 @@ async function prependCrash() {
     fs.readFile("handwritten_crashes.json", "utf-8"),
   ]);
 
-  const mainCrashes = JSON.parse(rawMain);
+  let mainCrashes = JSON.parse(rawMain);
   const handwritten = JSON.parse(rawExtra);
 
   const toAdd = Array.isArray(handwritten) ? handwritten : [handwritten];
+
+  const titlesToAdd = new Set(toAdd.map((c) => c.title));
+
+  mainCrashes = mainCrashes.filter((c) => !titlesToAdd.has(c.title));
 
   const combined = [...toAdd, ...mainCrashes];
 
@@ -19,7 +23,7 @@ async function prependCrash() {
     "utf-8"
   );
 
-  console.log("✅ Added to the beginning of crashes.json");
+  console.log(`${toAdd.length} crash(es) added. Existing duplicates removed.`);
 }
 
 prependCrash().catch(console.error);

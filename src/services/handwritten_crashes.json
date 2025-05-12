@@ -1,61 +1,175 @@
-{
-  "period": "2000s",
-  "year": "2001",
-  "title": "September 11 Attacks",
-  "date": "2001-09-11",
-  "aircraftType": "Boeing 767-223ER, Boeing 767-222, Boeing 757-223, Boeing 757-222",
-  "operator": "American Airlines, United Airlines",
-  "occupants": "265 (all on board across 4 flights)",
-  "passengers": "227 (including 19 hijackers)",
-  "crew": "33",
-  "fatalities": "2977 (including all occupants and victims on the ground)",
-  "injuries": "6,000–25,000+",
-  "survivors": "0 (no survivors from any of the hijacked flights)",
-  "summary": "On September 11, 2001, Al-Qaeda operatives orchestrated a coordinated terrorist attack against the United States by hijacking four commercial airplanes. Two planes crashed into the Twin Towers of the World Trade Center in New York City, one struck the Pentagon in Arlington, Virginia, and the fourth crashed into a field in Pennsylvania after passengers attempted to overcome the hijackers. The attacks resulted in nearly 3,000 deaths and profoundly reshaped global security policies and international relations.",
-  "site": "New York City, Arlington (Virginia), Shanksville (Pennsylvania), United States",
-  "coordinates": "40.7128°N 74.0060°W (New York City), 38.8700°N 77.0550°W (Pentagon), 40.0300°N 78.9000°W (Shanksville)",
-  "details": {
-    "aircraft": [
-      "The attacks involved four Boeing aircraft models: two Boeing 767s and two Boeing 757s. American Airlines Flight 11 and United Airlines Flight 175 were Boeing 767s departing from Boston Logan International Airport. American Airlines Flight 77 and United Airlines Flight 93 were Boeing 757s departing from Washington Dulles Airport and Newark International Airport, respectively.",
-      "The planes were selected because of their large fuel capacities for long-distance flights, which created massive explosions and structural damage upon impact.",
-      "The hijackers received flight training in the United States, allowing them to control the aircraft after overpowering the pilots and crew with small knives and box cutters."
-    ],
-    "incident": [
-      "At approximately 8:46 AM, American Airlines Flight 11 crashed into the North Tower of the World Trade Center. United Airlines Flight 175 followed at 9:03 AM, striking the South Tower.",
-      "Shortly after, at 9:37 AM, American Airlines Flight 77 crashed into the western side of the Pentagon.",
-      "United Airlines Flight 93, delayed on the runway, was hijacked but never reached its intended target due to a passenger revolt; it crashed into a field near Shanksville, Pennsylvania at 10:03 AM.",
-      "The attacks led to the collapse of the Twin Towers and extensive destruction in Lower Manhattan. The Pentagon suffered severe damage, and thousands of lives were lost or permanently affected."
-    ],
-    "investigation": [
-      "The FBI immediately launched Operation PENTTBOM, the largest criminal investigation in U.S. history.",
-      "Evidence quickly pointed to Al-Qaeda as the responsible organization. In 2002, the 9/11 Commission was formed to provide a thorough account of the events and circumstances leading to the attacks.",
-      "The Commission's final report, released in 2004, revealed significant failures in intelligence gathering, communication between agencies, and aviation security.",
-      "The investigation led to major reforms, including the establishment of the Department of Homeland Security and the reorganization of U.S. intelligence services."
-    ],
-    "cause": [
-      "The motivations behind the attacks were rooted in Al-Qaeda's opposition to American foreign policy, particularly the U.S. military presence in Saudi Arabia, support for Israel, and intervention in Middle Eastern affairs.",
-      "Osama bin Laden had previously issued fatwas in 1996 and 1998, declaring jihad against the United States.",
-      "Operationally, the success of the attacks was facilitated by gaps in airport security, poor interagency intelligence sharing, and a general underestimation of the threat posed by non-state terrorist actors."
-    ],
-    "timeline": [
-      "7:59 AM: American Airlines Flight 11 departs from Boston Logan Airport.",
-      "8:14 AM: United Airlines Flight 175 departs from Boston Logan Airport.",
-      "8:20 AM: American Airlines Flight 77 departs from Washington Dulles Airport.",
-      "8:42 AM: United Airlines Flight 93 departs from Newark Airport.",
-      "8:46 AM: Flight 11 crashes into the North Tower of the World Trade Center.",
-      "9:03 AM: Flight 175 crashes into the South Tower of the World Trade Center.",
-      "9:37 AM: Flight 77 crashes into the Pentagon.",
-      "9:59 AM: The South Tower collapses.",
-      "10:03 AM: Flight 93 crashes into a field near Shanksville, Pennsylvania.",
-      "10:28 AM: The North Tower collapses.",
-      "5:20 PM: World Trade Center 7 collapses due to fire-induced structural failure."
-    ],
-    "casualties": [
-      "The attacks resulted in the deaths of 2,977 victims, excluding the 19 hijackers.",
-      "Among the deceased were 246 passengers and crew aboard the four flights, 2,606 people in and around the World Trade Center, and 125 individuals at the Pentagon.",
-      "The fatalities included 343 firefighters and 72 law enforcement officers.",
-      "Additionally, more than 6,000 individuals were injured.",
-      "Thousands more, especially first responders and residents of Lower Manhattan, later suffered from chronic illnesses such as respiratory problems and cancer due to prolonged exposure to the toxic debris cloud produced by the collapse of the towers."
-    ]
+[
+  {
+    "period": "2000s",
+    "year": "2001",
+    "title": "September 11 Attacks",
+    "date": "2001-09-11",
+    "aircraftType": "Boeing 767-223ER, Boeing 767-222, Boeing 757-223, Boeing 757-222",
+    "operator": "American Airlines, United Airlines",
+    "occupants": "265 (all on board across 4 flights)",
+    "passengers": "227 (including 19 hijackers)",
+    "crew": "33",
+    "fatalities": "2977 (including all occupants and victims on the ground)",
+    "injuries": "6,000–25,000+",
+    "survivors": "0 (no survivors from any of the hijacked flights)",
+    "summary": "On September 11, 2001, Al-Qaeda operatives orchestrated a coordinated terrorist attack against the United States by hijacking four commercial airplanes. Two planes crashed into the Twin Towers of the World Trade Center in New York City, one struck the Pentagon in Arlington, Virginia, and the fourth crashed into a field in Pennsylvania after passengers attempted to overcome the hijackers. The attacks resulted in nearly 3,000 deaths and profoundly reshaped global security policies and international relations.",
+    "site": "New York City, Arlington (Virginia), Shanksville (Pennsylvania), United States",
+    "coordinates": "40.7128°N 74.0060°W (New York City), 38.8700°N 77.0550°W (Pentagon), 40.0300°N 78.9000°W (Shanksville)",
+    "details": {
+      "aircraft": [
+        "The attacks involved four Boeing aircraft models: two Boeing 767s and two Boeing 757s. American Airlines Flight 11 and United Airlines Flight 175 were Boeing 767s departing from Boston Logan International Airport. American Airlines Flight 77 and United Airlines Flight 93 were Boeing 757s departing from Washington Dulles Airport and Newark International Airport, respectively.",
+        "The planes were selected because of their large fuel capacities for long-distance flights, which created massive explosions and structural damage upon impact.",
+        "The hijackers received flight training in the United States, allowing them to control the aircraft after overpowering the pilots and crew with small knives and box cutters."
+      ],
+      "incident": [
+        "At approximately 8:46 AM, American Airlines Flight 11 crashed into the North Tower of the World Trade Center. United Airlines Flight 175 followed at 9:03 AM, striking the South Tower.",
+        "Shortly after, at 9:37 AM, American Airlines Flight 77 crashed into the western side of the Pentagon.",
+        "United Airlines Flight 93, delayed on the runway, was hijacked but never reached its intended target due to a passenger revolt; it crashed into a field near Shanksville, Pennsylvania at 10:03 AM.",
+        "The attacks led to the collapse of the Twin Towers and extensive destruction in Lower Manhattan. The Pentagon suffered severe damage, and thousands of lives were lost or permanently affected."
+      ],
+      "investigation": [
+        "The FBI immediately launched Operation PENTTBOM, the largest criminal investigation in U.S. history.",
+        "Evidence quickly pointed to Al-Qaeda as the responsible organization. In 2002, the 9/11 Commission was formed to provide a thorough account of the events and circumstances leading to the attacks.",
+        "The Commission's final report, released in 2004, revealed significant failures in intelligence gathering, communication between agencies, and aviation security.",
+        "The investigation led to major reforms, including the establishment of the Department of Homeland Security and the reorganization of U.S. intelligence services."
+      ],
+      "cause": [
+        "The motivations behind the attacks were rooted in Al-Qaeda's opposition to American foreign policy, particularly the U.S. military presence in Saudi Arabia, support for Israel, and intervention in Middle Eastern affairs.",
+        "Osama bin Laden had previously issued fatwas in 1996 and 1998, declaring jihad against the United States.",
+        "Operationally, the success of the attacks was facilitated by gaps in airport security, poor interagency intelligence sharing, and a general underestimation of the threat posed by non-state terrorist actors."
+      ],
+      "timeline": [
+        "7:59 AM: American Airlines Flight 11 departs from Boston Logan Airport.",
+        "8:14 AM: United Airlines Flight 175 departs from Boston Logan Airport.",
+        "8:20 AM: American Airlines Flight 77 departs from Washington Dulles Airport.",
+        "8:42 AM: United Airlines Flight 93 departs from Newark Airport.",
+        "8:46 AM: Flight 11 crashes into the North Tower of the World Trade Center.",
+        "9:03 AM: Flight 175 crashes into the South Tower of the World Trade Center.",
+        "9:37 AM: Flight 77 crashes into the Pentagon.",
+        "9:59 AM: The South Tower collapses.",
+        "10:03 AM: Flight 93 crashes into a field near Shanksville, Pennsylvania.",
+        "10:28 AM: The North Tower collapses.",
+        "5:20 PM: World Trade Center 7 collapses due to fire-induced structural failure."
+      ],
+      "casualties": [
+        "The attacks resulted in the deaths of 2,977 victims, excluding the 19 hijackers.",
+        "Among the deceased were 246 passengers and crew aboard the four flights, 2,606 people in and around the World Trade Center, and 125 individuals at the Pentagon.",
+        "The fatalities included 343 firefighters and 72 law enforcement officers.",
+        "Additionally, more than 6,000 individuals were injured.",
+        "Thousands more, especially first responders and residents of Lower Manhattan, later suffered from chronic illnesses such as respiratory problems and cancer due to prolonged exposure to the toxic debris cloud produced by the collapse of the towers."
+      ]
+    }
+  },
+  {
+    "period": "1970s",
+    "year": "1977",
+    "title": "Tenerife airport disaster",
+    "date": "1977-03-27",
+    "aircraftType": "Boeing 747 206B / Boeing 747 121",
+    "operator": "KLM Royal Dutch Airlines / Pan American World Airways",
+    "occupants": "644 (Across both flights)",
+    "passengers": "614 (234 + 380)",
+    "crew": "30 (14 + 16)",
+    "fatalities": "583",
+    "injuries": "61",
+    "survivors": "61",
+    "summary": "March 27 – In the Tenerife airport disaster, two Boeing 747s, KLM Flight 4805 and Pan Am Flight 1736, collided on the runway at Los Rodeos Airport in heavy fog; 583 of the 644 people on board the two aircraft were killed. This was in the deadliest accident in the history of commercial aviation.",
+    "site": "Los Rodeos Airport (Now Tenerife North), Tenerife, Canary Islands, Spain",
+    "coordinates": "28.4816500°N 16.3384000°W",
+    "details": {
+      "aircraft": [
+        "KLM Flight 4805 – Boeing 747 206B (PH BUF, Rijn), charter from Amsterdam Schiphol to Gran Canaria.",
+        "Captain Jacob V. van Zanten (11 700 h; 1 545 h on 747)",
+        "First Officer Klaas Meurs, Flight Engineer Willem Schreuder",
+        "234 passengers, 14 crew.",
+        "Pan Am Flight 1736 – Boeing 747 121 (N736PA, Clipper Victor), charter from Los Angeles via JFK to Gran Canaria.",
+        "Captain Victor Grubbs (21 043 h; 564 h on 747)",
+        "F/O Robert Bragg, F/E George Warns, 13 cabin crew",
+        "380 passengers, 16 crew."
+      ],
+      "incident": [
+        "On the afternoon of 27 March 1977 Los Rodeos Airport was overwhelmed by traffic diverted from Gran Canaria after a terminal bomb explosion. Five wide body jets—including the two Boeing 747s involved—clogged the single taxiway, forcing every departure to back taxi along the active runway.",
+        "As a coastal fog swept across the field, visibility for tower and crews plunged below 100 m. KLM 4805, having taken on an extra 45 tonnes of fuel, back taxied to the far threshold and turned to face Runway 30; behind it, Pan Am 1736 entered the same runway, instructed to leave via the third exit and join the parallel taxiway. In the dense cloud the Pan Am crew mis identified the un marked exits and was still on the runway when the KLM cockpit misunderstood a route clearance as a take off clearance.",
+        "Captain van Zanten advanced the throttles; his first officer’s query and the tower’s “Stand by for take off—I will call you” were partly masked by a simultaneous Pan Am transmission: “We’re still taxiing down the runway, Clipper 1736!” None of the critical words reached the KLM cockpit through the heterodyned static. Moments later the KLM 747 accelerated toward V 1 while the Pan Am, creeping forward in the fog, suddenly saw landing lights bearing down. Captain Grubbs yanked full power and swerved left onto the grass; van Zanten rotated early, tail struck, but could not clear the obstacle.",
+        "At 17:06 WET the KLM’s left side engines and landing gear sliced through Pan Am’s upper fuselage. The Dutch jet stalled, crashed 150 m beyond and exploded; the Pan Am broke apart and burned on the runway. 583 people died; 61—all from the Pan Am forward section—survived."
+      ],
+      "investigation": [
+        "Spain’s CIAIAC found the primary cause to be premature take off by KLM 4805 without explicit clearance, driven by:",
+        "- Misinterpretation of ambiguous radio phraseology (“We’re now at take off” / controller’s “OK … Stand by for take off”).",
+        "- Masked transmissions causing critical information loss.",
+        "- Human factors pressures—duty time limits, deteriorating weather, and cockpit hierarchy.",
+        "Contributory factors: Pan Am missing the assigned exit; runway taxiway congestion; lack of ground radar; rapidly changing fog.",
+        "The Dutch response stressed “mutual misunderstanding”, yet KLM accepted liability and settled US $110 million in claims."
+      ],
+      "cause": [
+        "The accident resulted from a series of human errors, including unclear communication, blocked radio transmissions, and the failure to question the captain’s decisions. The takeoff was initiated while the runway was still occupied. These factors were made worse by the aircraft’s excess fuel load and extremely poor visibility."
+      ],
+      "timeline": [
+        "13:15 Bomb explodes at Gran Canaria; airport closed, diversions begin.",
+        "16:51 KLM finishes refuelling (almost 45 t added).",
+        "17:02 KLM back taxies. Pan Am enters runway behind.",
+        "17:06:18 KLM begins take off roll. Pan Am still on runway.",
+        "17:06:49 Collision occurs near taxiway C4. Both aircraft destroyed. ",
+        "19:00+ Fire contained. Survivors evacuated."
+      ],
+      "casualties": [
+        "KLM 4805: 248 fatalities (0 survivors).",
+        "Pan Am 1736: 335 fatalities; 61 injured survivors.",
+        "Total: 583 dead, 61 injured."
+      ]
+    }
+  },
+  {
+    "period": "1980s",
+    "year": "1985",
+    "title": "Japan Air Lines Flight 123",
+    "date": "1985-08-12",
+    "aircraftType": "Boeing 747SR-46",
+    "operator": "Japan Air Lines (JAL)",
+    "occupants": "524",
+    "passengers": "509",
+    "crew": "15",
+    "fatalities": "520",
+    "injuries": "4",
+    "survivors": "4",
+    "summary": "August 12 – Japan Air Lines Flight 123, a Boeing 747 operating a domestic flight in Japan, crashes into Mount Takamagahara after suffering a rapid decompression that severs all hydraulic lines and renders the aircraft uncontrollable; with the loss of 520 of the 524 people on board, this is the deadliest single-aircraft disaster in history to date.",
+    "site": "Mount Takamagahara, Ueno, Tano District, Gunma, Japan",
+    "coordinates": "36.00139°N 138.69389°E",
+    "details": {
+      "aircraft": [
+        "JA8119 – Boeing 747SR 46 delivered 1974, configured for 563 seats (short range domestic “SR” variant).",
+        "Capt. Masami Takahama (49) – 12 423 h (4 842 h on 747)",
+        "F/O Yutaka Sasaki (39) – 3 963 h (2 665 h on 747) – under upgrade training",
+        "F/E Hiroshi Fukuda (46) – 9 831 h (3 846 h on 747)"
+      ],
+      "incident": [
+        "Flight JL123 departed Tokyo Haneda at 18:12 JST, bound for Osaka Itami. Twelve minutes later, at 18:24, a fault induced rupture of the rear pressure bulkhead caused an explosive decompression that tore away most of the vertical stabiliser and severed all four hydraulic systems. With every conventional control surface disabled, the 747 began wild phugoid climbs and descents and pronounced Dutch roll oscillations.",
+        "The crew declared an emergency and attempted to return to Haneda, using differential engine thrust to steer and damp the oscillations. Lowering the landing gear (18:40) and later partial flap extension improved pitch stability but reduced yaw authority. For 32 minutes the aircraft wandered across central Honshū, gradually descending into mountainous terrain. At 18:56:30 the right wing struck a ridge near Mount Takamagahara; the 747 flipped, broke apart and exploded, creating the deadliest single aircraft crash in aviation history."
+      ],
+      "investigation": [
+        "Japan’s Aircraft Accident Investigation Commission, assisted by the U.S. NTSB, determined that:",
+        "- The 747 had suffered a tail strike at Itami on 2 June 1978.",
+        "- Boeing technicians improperly repaired the damaged aft pressure bulkhead, splicing two separate doubler plates instead of one continuous plate with three rivet rows.",
+        "- The flawed repair reduced fatigue strength; after ~12 300 pressurisation cycles the splice failed, triggering the decompression that destroyed the hydraulics and tail."
+      ],
+      "cause": [
+        "Explosive decompression and complete hydraulic failure following fatigue crack propagation in an incorrectly repaired aft pressure bulkhead.",
+        "Contributory factors: absence of damping surfaces after tail loss; lack of hydraulic redundancy; crew hypoxia at cruise altitude; delayed ground rescue response."
+      ],
+      "timeline": [
+        "18:04 Push back from Haneda Gate 18.",
+        "18:12 Take off Runway 15L.",
+        "18:24 Rear bulkhead fails, rapid decompression; hydraulics lost, vertical stabiliser separates.",
+        "18:31 Over Yaizu; crew reports uncontrollable",
+        "18:40 Landing gear manually extended to damp oscillations.",
+        "18:48 - 18:54 Flaps were extended sequentially from 5 to 20, then to 25 units as the aircraft entered its final right roll.",
+        "18:56 Right wing clips ridge; aircraft disintegrates and burns."
+      ],
+      "casualties": [
+        "Crew: 15 fatalities",
+        "Passengers: 505 fatalities; 4 survivors, all seated on the left side in rows 54–60",
+        "Several passengers initially survived the impact but later died overnight before rescue teams could reach the site"
+      ]
+    }
   }
-}
+]
