@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 import Layout from "./components/Layout";
 import SearchPanel from "./components/SearchPanel";
+import ScrollToTop from "./components/ScrollToTop";
 import IncidentDetail from "./components/IncidentDetail";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -9,6 +11,7 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <Layout>
+      <ScrollToTop />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route
@@ -65,6 +68,7 @@ const App = () => {
           />
         </Routes>
       </AnimatePresence>
+      <Analytics />
     </Layout>
   );
 };
