@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Layout from "./components/Layout";
 import SearchPanel from "./components/SearchPanel";
 import ScrollToTop from "./components/ScrollToTop";
@@ -69,6 +70,7 @@ const App = () => {
         </Routes>
       </AnimatePresence>
       <Analytics />
+      <SpeedInsights />
     </Layout>
   );
 };
