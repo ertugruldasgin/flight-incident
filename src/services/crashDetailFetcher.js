@@ -69,7 +69,12 @@ function getParagraphsAfterHeader(doc, headerId) {
 
 export async function fetchAllDetails(pageName) {
   const URL = `https://en.wikipedia.org/w/api.php?action=parse&page=${pageName}&format=json&origin=*`;
-  const res = await fetch(URL);
+  const res = await fetch(URL, {
+    headers: {
+      "User-Agent": "FlightIncidentProject/1.0 (contact@example.com)",
+      Accept: "application/json",
+    },
+  });
   const data = await res.json();
 
   const rawHTML = data.parse.text["*"];

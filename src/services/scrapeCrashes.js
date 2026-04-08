@@ -8,22 +8,49 @@ const BASE_URL =
   "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_accidents_and_incidents_involving_commercial_aircraft&format=json&origin=*";
 
 const START_YEAR = "1913";
-const START_INDEX = 0; // 0 dersen yıl bazlı baslar override edilebilir
+const START_INDEX = 0;
+const CONCURRENCY = 5;
 
-async function retry(fn, retries = 3, delay = 1000) {
+async function asyncPool(concurrency, items, fn) {
+  const results = [];
+  const executing = [];
+
+  for (const item of items) {
+    const p = Promise.resolve().then(() => fn(item));
+    results.push(p);
+
+    if (concurrency <= items.length) {
+      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+      executing.push(e);
+      if (executing.length >= concurrency) {
+        await Promise.race(executing);
+      }
+    }
+  }
+
+  return Promise.allSettled(results);
+}
+
+async function retry(fn, retries = 3, delay = 2000) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
       return await fn();
     } catch (err) {
       console.log(`📌 Attempt ${attempt} failed.`);
       if (attempt === retries) throw err;
-      await new Promise((resolve) => setTimeout(resolve, delay));
+      await new Promise((resolve) => setTimeout(resolve, delay * attempt));
     }
   }
 }
 
 async function scrapeAll() {
-  const res = await fetch(BASE_URL);
+  const res = await fetch(BASE_URL, {
+    headers: {
+      "User-Agent": "FlightIncidentProject/1.0 (contact@example.com)",
+      Accept: "application/json",
+    },
+  });
   const data = await res.json();
 
   const rawHTML = data.parse.text["*"];
@@ -31,7 +58,7 @@ async function scrapeAll() {
   const document = dom.window.document;
 
   const elements = document.querySelectorAll("h2, h3, li");
-  const crashList = [];
+  const toFetch = [];
 
   let scraping = false;
   let currentPeriod = "";
@@ -96,24 +123,43 @@ async function scrapeAll() {
 
       const summary = el.textContent.trim();
 
-      console.log(`\nFetching [${currentYear}] -> ${pageName}`);
-
-      try {
-        const crashData = await retry(() => fetchCrash(pageName));
-        const detailData = await retry(() => fetchAllDetails(pageName));
-
-        crashList.push({
-          period: currentPeriod,
-          year: currentYear,
-          ...crashData,
-          details: detailData,
-          summary,
-        });
-      } catch (err) {
-        console.error("\u274C Hata:", pageName, err);
-      }
+      toFetch.push({
+        pageName,
+        year: currentYear,
+        period: currentPeriod,
+        summary,
+      });
     }
   }
+
+  console.log(`\n🚀 Toplam ${toFetch.length} uçak kazası fetch edilecek...\n`);
+
+  const results = await asyncPool(
+    CONCURRENCY,
+    toFetch,
+    async ({ pageName, year, period, summary }) => {
+      console.log(`Fetching [${year}] -> ${pageName}`);
+      try {
+        const [crashData, detailData] = await Promise.all([
+          retry(() => fetchCrash(pageName)),
+          retry(() => fetchAllDetails(pageName)),
+        ]);
+
+        return { period, year, ...crashData, details: detailData, summary };
+      } catch (err) {
+        console.error(`❌ Hata: ${pageName}`, err.message);
+        return null;
+      }
+    },
+  );
+
+  const crashList = results
+    .filter((r) => r.status === "fulfilled" && r.value !== null)
+    .map((r) => r.value);
+
+  console.log(
+    `\n📊 ${crashList.length} / ${toFetch.length} başarıyla toplandı`,
+  );
 
   fs.writeFileSync("crashes.json", JSON.stringify(crashList, null, 2));
   console.log("\n✅ JSON FILE IS READY!");
